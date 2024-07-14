@@ -1,21 +1,28 @@
 function runScraper() {
-    $.get('run_scraper', function(data) {
+    // Sends a GET request to 'run_scraper' endpoint
+    $.get('run_scraper', function() {
+        // Callback function executed upon successful response
         reloadTable();
     });
 }
 
 function getOnlyMoreThanFiveWords() {
-    $.get('get_more_than_five_words', function(data) {
+    // Sends a GET request to 'get_more_than_five_words' endpoint
+    $.get('get_more_than_five_words', function() {
+        // Callback function executed upon successful response
         reloadTable();
     });
 }
 
 function getOnlyLessThanFiveWords() {
-    $.get('get_less_than_five_words', function(data) {
+    // Sends a GET request to 'get_less_than_five_words' endpoint
+    $.get('get_less_than_five_words', function() {
+        // Callback function executed upon successful response
         reloadTable();
     });
 }
 
 function reloadTable() {
+    // Reloads the content of the '#news-table' element to update de entries
     $('#news-table').load(window.location.href + ' #news-table');
 }

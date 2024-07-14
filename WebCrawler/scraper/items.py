@@ -6,9 +6,15 @@
 import scrapy
 
 
-class NewsEntry(scrapy.Item):
-    number = scrapy.Field()
-    title = scrapy.Field()
-    points = scrapy.Field()
-    number_of_comments = scrapy.Field()
+class NewsEntryScraper(scrapy.Item):
+    """
+    Defines the structure of a news entry item to be scraped.
+    """
+
+    # Define fields for the news entry
+    number = scrapy.Field()             # Holds the number of the news entry
+    title = scrapy.Field()              # Holds the title of the news entry
+    points = scrapy.Field()             # Holds the points of the news entry
+    number_of_comments = scrapy.Field() # Holds the number of comments on the news entry
+
     pass
