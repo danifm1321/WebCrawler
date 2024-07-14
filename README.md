@@ -1,4 +1,4 @@
-# Welcome to the Stack Builder's coding exercise.
+# Welcome to Web Scraper.
 
 This exercise consists in a web crawler that, using scraping techniques, extracts the first 30 entries from https://news.ycombinator.com/ and displays them in a web page. It also allows to do two filtering operations: entries with more than five words in the title ordered by the number of comments, and entries with less than or equal five words in the title ordered by pints.
 
